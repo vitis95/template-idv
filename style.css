@@ -33,3 +33,8 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto }
 h1 {
     color: red;
 }
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
