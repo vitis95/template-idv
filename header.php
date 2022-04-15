@@ -10,4 +10,5 @@
 
 </head>
 <body>
-    
+<img src="<?php echo get_template_directory_uri(); ?>/img/logo-test.png" alt="logo"
+width="250" height="100">    
