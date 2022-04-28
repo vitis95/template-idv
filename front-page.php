@@ -6,7 +6,7 @@
 <h2 class="blog-info-name"><?php bloginfo('name'); ?></h2>
 <h3 class="blog-info-description"><?php bloginfo('description'); ?></h3>
 
-
+<!-- 
 <div class="content">
 	<article class="post">
 		<h2>lorem</h2>
@@ -32,7 +32,7 @@
 		</ul>
 	</div>
 </aside>
-
+ -->
 
 
 

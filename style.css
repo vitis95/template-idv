@@ -1,6 +1,15 @@
 /*
 Theme Name: Template IDV
+Description: Descrizione del tema
+Version: 1.0.0
 Author: Ivan De Vita
+Author URI: https://ivandevita.me/ // pagina chi sono
+Site: https://ivandevita.me/
+Text Domain: templateidv
+Domain Path: /languages
+Tags: grid-layout, blog, custom-menu, featured-images, right-sidebar
+License: GNU General Public License v3.0
+License URI:
 */
 
 
@@ -48,8 +57,11 @@ a { color: #21aabd; }
 .header { padding: 20px; background: #EDF2F4; }
 .header__logo { color: #D90429; float: left; text-decoration: none; }
 .header__nav { float: right; margin: 0; padding: 0; list-style-type: none; }
-.header__nav__item { display: inline-block; }
-.header__nav__item a { padding: 5px 10px; color: #D90429; text-decoration: none; }
+.header__nav .page_item { display: inline-block; }
+.header__nav .page_item a { padding: 5px 10px; color: #D90429; text-decoration: none; }
+
+.header__icon-bar { display: none; } 
+.header__icon-bar span { display: block; background-color: #2B2D42; height: 2px; width: 23px; margin-bottom: 5px; }
 
 .main-title { padding: 50px 20px; text-align: center; background: #2B2D42; color: #EDF2F4; margin: 0; font-weight: 300; font-size: 50px; }
 .blog-info-name { padding: 5x; text-align: center; }
@@ -75,11 +87,12 @@ Smartphone
     
     /* Header & Menu */
     .header__logo { margin-bottom: 20px; }
-    .header__nav { width: 100%; height: 0; overflow: hidden; }
-    .header__nav__item { display: block; }
-    .header__nav__item a { display: block; padding: 10px 15px; border-bottom: 1px solid #666; }
-
-    .header__icon-bar { float: right; }
+    .header__nav { width: 100%; height: 0; overflow: hidden; -webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
+    .header__nav .page_item { display: block; }
+    .header__nav .page_item a { display: block; padding: 10px 15px; border-bottom: 1px solid #666; }
+    
+    .header__icon-bar{float: right;display: block;}
+    .show-nav-mobile{height:300px;overflow: auto;}
 
     /* Content Layout */
     .content,
