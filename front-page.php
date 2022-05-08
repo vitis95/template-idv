@@ -6,7 +6,7 @@
 <h3 class="blog-info-description"><?php bloginfo('description'); ?></h3>
 
 <div class="content">
-<h1> FRONT PAGE STATICA </h1>
+<p> FRONT PAGE STATICA </p>
 </div>
 <aside class="sidebar">
 	<?php get_sidebar(); ?>

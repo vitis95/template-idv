@@ -1,6 +1,6 @@
 <div class="clearfix"></div>
-<footer><p> Footer </p></footer>
-</div>
+<footer><p>&copy; Copyright <?php echo date("o");?> - <?php bloginfo('name'); ?></p></footer>
+</div><!-- questo è la chiusura del container -->
 
 
 

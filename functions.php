@@ -1,5 +1,5 @@
 <?php
-/* ------------------------------ 
+/* ------------------------------
 Theme setup
 ------------------------------ */
 if (! function_exists('templateidv_setup') ) {
@@ -29,7 +29,31 @@ if (! function_exists('templateidv_setup') ) {
     }
 }
 add_action( 'after_setup_theme', 'templateidv_setup');
-/* ------------------------------ 
+/* ------------------------------
+Register Sidebars
+------------------------------ */
+if (! function_exists('tempalteidv_sidebars')) {
+  function tempalteidv_sidebars() {
+    $args = array(
+      'name'          => 'Primary',
+      'id'            => 'primary',
+      'description'   => 'Normal full width sidebar.',
+      'class'         => '',
+      'before_widget' => '<div id="%1$s" class="widget %2$s">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h3 class="widgettitle">',
+      'after_title'   => '</h3>' 
+    );
+
+    register_sidebar( $args );
+
+  }
+}
+
+add_action( 'widgets_init', 'tempalteidv_sidebars' );
+
+
+/* ------------------------------
 Include Styles and script
 ------------------------------ */
 if (!function_exists('templateidv_styles_scripts') ) {
@@ -38,14 +62,7 @@ if (!function_exists('templateidv_styles_scripts') ) {
         wp_enqueue_script('templateidv_scripts',get_template_directory_uri() . '/js/app.js', array('jquery'), '', true);
         wp_enqueue_style('tempalteidv-sourcesanspro','//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
         wp_enqueue_style('tempalteidv', get_template_directory_uri().'/style.css');
-        
+
     }
 }
 add_action('wp_enqueue_scripts', 'templateidv_styles_scripts');
-
-
-
-
-
-
-
