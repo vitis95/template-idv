@@ -73,6 +73,8 @@ a { color: #21aabd; }
 .widget ul { padding: 0; list-style-type: none; }
 .widget ul li a { text-decoration: none; display: block; border-bottom: 1px solid #eee; padding: 10px 15px; }
 
+footer { padding: 20px; }
+
 /*--------------------------------------------------------------
 Tablet
 --------------------------------------------------------------*/
