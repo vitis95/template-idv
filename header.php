@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="<?php bloginfo( 'description' ); ?>"> 
-    
+    <meta name="description" content="<?php bloginfo( 'description' ); ?>">
+
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -19,7 +19,7 @@
 <a href="" class="header__icon-bar"><span></span><span></span><span></span></a>
 
 
-<?php /* Main Navigation */
+<?php /* Main Navigation - inserire menu dinamico */
     wp_nav_menu( array(
         'theme_location' => 'header', // nome dato in function.php
         'depth' => 2, // può avere sotto menu, quindi tendine
