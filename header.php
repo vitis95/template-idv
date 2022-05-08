@@ -13,7 +13,7 @@
 
 
 
-<div class="header clearfix">
+<header class="header clearfix">
 <!-- <img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-test.png" alt="logo">     -->
 <a href="" class="header__logo"><?php bloginfo('name'); ?></a>
 <a href="" class="header__icon-bar"><span></span><span></span><span></span></a>
@@ -38,4 +38,14 @@
         <li class=header__nav__item><a href="">Nav 4</a></li>
         <li class=header__nav__item><a href="">Nav 5</a></li>
     </ul> -->
-</div>
+</header>
+
+<?php if(is_front_page()){ ?>
+  <h1 class="main-title"><?php the_title() ?></h1>
+  <h2 class="blog-info-name"><?php bloginfo('name'); ?></h2>
+  <h3 class="blog-info-description"><?php bloginfo('description'); ?></h3>
+<?php } else if (is_category() || is_tag() ) { ?>
+  <h1 class="main-title"><?php echo single_cat_title() ?> </h1>
+<?php } else if (is_search() ) { ?>
+  <h1 class="main-title">Risultati della ricerca per: <strong><i><?php echo $s ?></i></strong></h1>
+<?php } ?>

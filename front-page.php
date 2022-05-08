@@ -1,9 +1,7 @@
 <?php get_header(); ?>
 
 
-<h1 class="main-title"><?php the_title() ?></h1>
-<h2 class="blog-info-name"><?php bloginfo('name'); ?></h2>
-<h3 class="blog-info-description"><?php bloginfo('description'); ?></h3>
+
 
 <div class="content">
 <p> FRONT PAGE STATICA </p>

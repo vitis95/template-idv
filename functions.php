@@ -42,7 +42,7 @@ if (! function_exists('tempalteidv_sidebars')) {
       'before_widget' => '<div id="%1$s" class="widget %2$s">',
       'after_widget'  => '</div>',
       'before_title'  => '<h3 class="widgettitle">',
-      'after_title'   => '</h3>' 
+      'after_title'   => '</h3>'
     );
 
     register_sidebar( $args );
@@ -61,6 +61,7 @@ if (!function_exists('templateidv_styles_scripts') ) {
         // wp_enqueue_script('jquery');
         wp_enqueue_script('templateidv_scripts',get_template_directory_uri() . '/js/app.js', array('jquery'), '', true);
         wp_enqueue_style('tempalteidv-sourcesanspro','//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700');
+        wp_enqueue_style( 'tempalteidv-normalize', 'https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css');
         wp_enqueue_style('tempalteidv', get_template_directory_uri().'/style.css');
 
     }

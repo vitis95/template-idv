@@ -48,7 +48,8 @@ Clearfix
 General
 --------------------------------------------------------------*/
 body, html { font-family: "Montserrat"; }
-
+input { border: 1px solid #ddd; }
+input[type="submit"] { background: #333; color: #fff; border: none; }
 /*--------------------------------------------------------------
 Layout
 --------------------------------------------------------------*/
@@ -59,15 +60,36 @@ a { color: #21aabd; }
 .header__nav { float: right; margin: 0; padding: 0; list-style-type: none; }
 .header__nav .menu-item { display: inline-block; }
 .header__nav .menu-item a { padding: 5px 10px; color: #D90429; text-decoration: none; }
-
 .header__icon-bar { display: none; }
 .header__icon-bar span { display: block; background-color: #2B2D42; height: 2px; width: 23px; margin-bottom: 5px; }
-
+/*--------------------------------------------------------------
+Home
+--------------------------------------------------------------*/
 .main-title { padding: 50px 20px; text-align: center; background: #2B2D42; color: #EDF2F4; margin: 0; font-weight: 300; font-size: 50px; }
 .blog-info-name { padding: 5x; text-align: center; }
 .blog-info-description { padding: 5px; text-align: center; }
+/*--------------------------------------------------------------
+Index (front page), Single, Page
+--------------------------------------------------------------*/
 .content { width: 70%; float: left; }
+.content__title { font-size: 42px; }
 .post { padding: 40px; border-bottom: 1px solid #EDF2F4; }
+.content .page { padding: 40px;  }
+.content .tag a { background: #666; color: #fff; padding: 5px 10px; text-decoration: none; display: inline-block; margin-top: 5px; }
+/* Comments */
+.comments { margin: 40px 0; border-top: 1px solid #eee; }
+.comment-body { margin: 40px 0; }
+.comment-author.vcard img { border-radius: 100% }
+.comment-form-comment textarea { background: #eee; width: 100%; border: 1px solid #ddd; }
+.comment-form-author input { background: #eee; max-width: 300px; border: 1px solid #ddd; padding: 5px; }
+.comment-form-email input { background: #eee; max-width: 300px; border: 1px solid #ddd; padding: 5px; }
+.comment-form-url input { background: #eee; max-width: 300px; border: 1px solid #ddd; padding: 5px; }
+.comment-form-author label,
+.comment-form-email label,
+.comment-form-url label { width: 100px; display: inline-block; }
+.form-submit input { background: #333; color: #fff; border: none; font-size: 16px; padding: 10px 15px;}
+
+/* Sidebar */
 .sidebar { width: 30%; float: left; }
 .widget { padding: 40px; }
 .widget ul { padding: 0; list-style-type: none; }

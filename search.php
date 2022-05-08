@@ -12,8 +12,7 @@
   			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   				<!-- link e titolo del post -->
   				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-  				<!-- Data e Categorie, la virgola nel caso in cui ci siano diverse categorie. -->
-  				<p> <?php the_time('j M , Y') ?> - <?php the_category(', '); ?></p>
+
   				<!-- link e immagine di evidenza -->
   				<a href="<?php the_permalink(); ?>">
   				  <?php the_post_thumbnail('templateidv_single', array('class' => 'img-res','alt' => get_the_title())); ?>
