@@ -153,7 +153,16 @@ Index (front page), Single, Page
 .widget ul { padding: 0; list-style-type: none; }
 .widget ul li a { text-decoration: none; display: block; border-bottom: 1px solid #eee; padding: 10px 15px; }
 
-footer { padding: 20px; }
+/* footer { padding: 20px; } */
+
+.footer { width: 100%; min-height: 600px; background: #D90429; }
+.footer-section { border-bottom: 1px solid #d8d8d8; padding: 50px; display: flex; justify-content: space-between; }
+.footer-newsletter {  width: 25%; padding: 25px; display: flex; flex-direction: column; }
+.footer-newsletter-email { width: 100%; display: flex; flex-direction: row; padding: 25px 0; }
+.input-email { width: 160px; height: 50px; background-color: #fff; opacity: 1; }
+.footer-social {  padding: 25px; width: 25%; }
+.footer-copy {  padding: 25px; width: 25%; }
+.footer-contact-us-wrapper { max-width: 25%; margin: 0 16px; background-color: #EDF2F4; border-radius: 4px; padding: 25px; }
 
 /*--------------------------------------------------------------
 Tablet
