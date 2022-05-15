@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php bloginfo( 'description' ); ?>">
-
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -20,11 +19,19 @@
 
 
 <?php /* Main Navigation - inserire menu dinamico */
+    // wp_die(var_dump(get_registered_nav_menus()));
+    get_terms('nav_menu');
     wp_nav_menu( array(
         'theme_location' => 'header', // nome dato in function.php
         'depth' => 2, // può avere sotto menu, quindi tendine
         'container' => false, // non vogliamo nessun container
-        'menu_class' => 'header__nav' // classe che abbiamo in ul
+        //'container' => 'nav',
+        //'container_class' => 'prova',
+        // 'menu_id' => 'collapseExample'
+        'menu_class' => 'header__nav', // classe che abbiamo in ul
+        'add_li_class' => 'header__nav__item', // classe che abbiamo in li
+        // 'items_wrap' => '<div class="testttt" %2$s"'
+        //'walker' => new jsc_wp_nav_menu_walker() // è una estensione del menu di navigazione - questa classe fornisce aiuto agli sviluppatori per cambiare completamente e riorganizzare il menu
     )
     );
 ?>

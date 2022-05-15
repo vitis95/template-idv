@@ -21,14 +21,35 @@ if (! function_exists('templateidv_setup') ) {
 
         // Custom menu areas
         register_nav_menus( array(
-            'header' => esc_html__( 'Header', 'tempalteidv')
+            'nav_primary' => esc_html__( 'Nav Primary', 'tempalteidv'),
+            'nav_secondary' => esc_html__( 'Nav Secondary', 'tempalteidv')
         ) );
-
         // Load theme languages
         load_theme_textdomain( 'templateidv', get_template_directory().'/languages' );
     }
 }
 add_action( 'after_setup_theme', 'templateidv_setup');
+/* ------------------------------
+Add Class CSS
+------------------------------ */
+   // Additional class on li - l'ho fatto per aggiungere la classe creata da me --> =header__nav__item e non quella che assegna wp alle li ovvero .menu-item 
+   function add_additional_class_on_li($classes, $item, $args) {
+    if (isset($args->add_li_class)) {
+      $classes[] = $args->add_li_class;
+    }
+    return $classes;
+  }
+
+  add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+/* ------------------------------
+Walker
+------------------------------ */
+if (!function_exists('register_navwalker')) :
+  function register_navwalker() {
+      require('inc/jsc-navwalker.php');
+  }
+endif;
+add_action('after_setup_theme', 'register_navwalker');
 /* ------------------------------
 Register Sidebars
 ------------------------------ */
