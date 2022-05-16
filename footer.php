@@ -5,6 +5,9 @@
     <footer class="site-footer">
         <div class="footer">
             <div class="footer-section">
+                <h1> CIAO </h1>
+            </div>
+            <div class="footer-section">
             <div class="footer-copy">
                     <h3>Copyright</h3>
                     <p>&copy; Copyright <?php echo date("o");?> - <?php bloginfo('name'); ?></p>
@@ -36,6 +39,32 @@
                     <p>Privacy policy Privacy policy Privacy policy</p><br>
                     <p>Privacy policy Privacy policy Privacy policy</p><br>
                 </div>
+
+                <div class="footer-contact-us-wrapper">
+                    <p>Privacy policy Privacy policy Privacy policy</p><br>
+                    <p>Privacy policy Privacy policy Privacy policy</p><br>
+                    <p>Privacy policy Privacy policy Privacy policy</p><br>
+                    <p>Privacy policy Privacy policy Privacy policy</p><br>
+                    <p>Privacy policy Privacy policy Privacy policy</p><br>
+                </div>
+
+                <div class="footer-contact-us-wrapper">
+                    <p>Privacy policy Privacy policy Privacy policy</p><br>
+                    <p>Privacy policy Privacy policy Privacy policy</p><br>
+                    <p>Privacy policy Privacy policy Privacy policy</p><br>
+                    <p>Privacy policy Privacy policy Privacy policy</p><br>
+                    <p>Privacy policy Privacy policy Privacy policy</p><br>
+                </div>
+
+                <div class="footer-contact-us-wrapper">
+                    <p>Privacy policy Privacy policy Privacy policy</p><br>
+                    <p>Privacy policy Privacy policy Privacy policy</p><br>
+                    <p>Privacy policy Privacy policy Privacy policy</p><br>
+                    <p>Privacy policy Privacy policy Privacy policy</p><br>
+                    <p>Privacy policy Privacy policy Privacy policy</p><br>
+                </div>
+
+                
 
 
 
