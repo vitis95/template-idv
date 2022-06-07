@@ -14,7 +14,7 @@
 
 <header class="header clearfix">
 <!-- <img class="header__logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-test.png" alt="logo">     -->
-<a href="" class="header__logo"><?php bloginfo('name'); ?></a>
+<a href="<?php echo home_url(); ?>" class="header__logo"><?php bloginfo('name'); ?></a>
 <a href="" class="header__icon-bar"><span></span><span></span><span></span></a>
 
 

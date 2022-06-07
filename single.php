@@ -23,7 +23,7 @@
         <!-- Visualizza i tag degli articoli -->
         <?php $post_tags = wp_get_post_tags($post->ID);
         if(!empty($post_tags)) {?>
-          <p class="tag"> <small>Tag:</small></br><?php the_tags('', ' ', ''); ?></p>
+          <p class="tag"> <strong><small>Tag:</small></strong></br><?php the_tags('', ' ', ''); ?></p>
         <?php } ?>
 
 
